@@ -17,6 +17,10 @@ The application is broken up into microservices, so that a cluster of Raspberry 
     cd watcher/testdata
     ./create_jpgs
 
+## Remote DB
+
+Use `scripts/schema.sql` to create the schema for the main PostGres DB.
+
 ## Motion detection
 
 LPR-Raspi relies on the excellent [Motion](https://motion-project.github.io/) project, which does motion detection on video feeds.
@@ -54,6 +58,10 @@ You can try specify bitrate / FPS, but prefer just using fps.
     vb=10000,fps=10
     vb=5000,fps=5
     vb=2000,fps=2
+
+## Plate Detector
+
+The `plate_detector` app runs `openalpr.RecognizeByFilePath` and detects plates in the images using OpenALPR.
 
 ## Uploader
 
