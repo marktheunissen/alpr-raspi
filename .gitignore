@@ -13,3 +13,34 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+.DS_Store
+
+**/lpr.env
+
+ansible-conf
+training_extractor/.eggs
+training_extractor/out
+training_extractor/sorted
+training_extractor/extractor.egg-info
+**/*.pyc
+keys
+
+playbooks/shared-ansible-roles
+
+sample
+**/*.mkv
+**/*.mpg
+**/*.mpeg
+**/*.avi
+**/testdata/*.jpg
+**/test_output/*.jpg
+
+docs/axis_camera_manuals
+**/pkg
+**/bin
+
+/watcher/watched_dir/
+/uploader/*.jpg
+
+/motion_docker/images
