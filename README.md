@@ -5,7 +5,7 @@
 
 A set of services written in Go for running [OpenALPR](https://github.com/openalpr/openalpr) on the Raspberry Pi. These are written in such a way that they add missing functionality to the open source version of OpenALPR (e.g. multiple detection threads).
 
-The application is broken up into microservices, so that a cluster of Raspberry Pis could be effeciently used to increase the detection rate on a single camera. For example, you might want more detection threads running and so dedicate more CPU to detection.
+The application is broken up into microservices, so that a cluster of Raspberry Pis could be effeciently used to increase the detection rate on a single camera. For example, you might have a very busy roadway, and thus want more detection threads running by horizontally scaling the number of `plate_detector` instances across many Raspberry Pis.
 
 ## Local development Mac OSX
 
