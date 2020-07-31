@@ -3,9 +3,9 @@
 | :warning: **This project is not maintained or supported in any way** |
 | --- |
 
-A set of services written in Go for running [OpenALPR](https://github.com/openalpr/openalpr) on the Raspberry Pi. These are written to overcome the restrictions of the open source version of OpenALPR (e.g. multiple detection threads).
+A set of services written in Go for running [OpenALPR](https://github.com/openalpr/openalpr) on the Raspberry Pi. These are written in such a way that they add missing functionality to the open source version of OpenALPR (e.g. multiple detection threads).
 
-The application is broken up into microservices, so that a cluster Raspberry Pis could be effeciently used to increase the detection rate on a single camera.
+The application is broken up into microservices, so that a cluster of Raspberry Pis could be effeciently used to increase the detection rate on a single camera. For example, you might want more detection threads running and so dedicate more CPU to detection.
 
 ## Local development Mac OSX
 
@@ -96,11 +96,11 @@ To start on OSX in foreground:
 
 On Raspi (systemd):
 
-    start beanstalkd
+    systemctl start beanstalkd
 
 ## ALPR License Plate Recognition
 
-The plate recognition is performed using OpenALPR code:
+The plate recognition is performed using OpenALPR integration:
 
 - https://groups.google.com/forum/#!forum/openalpr
 - https://github.com/openalpr/openalpr

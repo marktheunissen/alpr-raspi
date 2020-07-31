@@ -1,0 +1,20 @@
+#!/bin/sh
+
+echo "Generating some jpgs..."
+
+function finish {
+    echo "Cleaning up..."
+    find . -iname '*.jpg' -exec rm {} \;
+}
+trap finish EXIT
+
+cp ../../sample/CA-982063.jpg img-`python -c 'import time; print time.strftime("%Y%m%d%H%M%S", time.gmtime()) + "-" + str(time.time())'`.jpg
+cp ../../sample/CA-982063.jpg img-`python -c 'import time; print time.strftime("%Y%m%d%H%M%S", time.gmtime()) + "-" + str(time.time())'`.jpg
+cp ../../sample/CA-982063.jpg img-`python -c 'import time; print time.strftime("%Y%m%d%H%M%S", time.gmtime()) + "-" + str(time.time())'`.jpg
+cp ../../sample/CA-982063.jpg img-`python -c 'import time; print time.strftime("%Y%m%d%H%M%S", time.gmtime()) + "-" + str(time.time())'`.jpg
+cp ../../sample/CA-982063.jpg img-`python -c 'import time; print time.strftime("%Y%m%d%H%M%S", time.gmtime()) + "-" + str(time.time())'`.jpg
+cp ../../sample/CA-982063.jpg img-`python -c 'import time; print time.strftime("%Y%m%d%H%M%S", time.gmtime()) + "-" + str(time.time())'`.jpg
+
+echo "Sleeping 15 seconds..."
+sleep 15
+
