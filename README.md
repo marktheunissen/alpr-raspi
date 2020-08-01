@@ -1,6 +1,6 @@
 # LPR on the Raspberry Pi
 
-| :warning: **This project is not maintained or supported in any way** |
+| :warning: **This proof of concept is incomplete, and not maintained or supported in any way** |
 | --- |
 
 A set of services written in Go for running [OpenALPR](https://github.com/openalpr/openalpr) on the Raspberry Pi. These are written in such a way that they add missing functionality to the open source version of OpenALPR (e.g. multiple detection threads).
